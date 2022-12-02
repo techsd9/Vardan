@@ -112,7 +112,7 @@ class ET_Builder_Google_Fonts_Feature extends ET_Builder_Global_Feature_Base {
 		 * Filters the option state before it's returned.
 		 * Allows other plugins to enable or disable a Google Font feature from code.
 		 *
-		 * @since ??
+		 * @since 4.19.1
 		 *
 		 * @param bool   $is_enabled Whether the sub option is enabled.
 		 * @param string $sub_option Google Fonts sub option.
@@ -124,7 +124,7 @@ class ET_Builder_Google_Fonts_Feature extends ET_Builder_Global_Feature_Base {
 	 * Builds the full URL to the Google Font css file to load the fonts
 	 * provided by the parameter.
 	 *
-	 * @since ??
+	 * @since 4.19.1
 	 *
 	 * @param array $google_fonts_url_args An array containing query-parameters.
 	 *
@@ -138,7 +138,7 @@ class ET_Builder_Google_Fonts_Feature extends ET_Builder_Global_Feature_Base {
 		 * Filters the URL of the requested Google Font CSS file.
 		 * Allows swapping Google Fonts with other font sources.
 		 *
-		 * @since ??
+		 * @since 4.19.1
 		 *
 		 * @param string $url The URL to the Google Fonts CSS file to fetch.
 		 */
@@ -229,7 +229,7 @@ class ET_Builder_Google_Fonts_Feature extends ET_Builder_Global_Feature_Base {
 		/**
 		 * Filter the unminified CSS file contents after loading it from Googles servers.
 		 *
-		 * @since ??
+		 * @since 4.19.1
 		 *
 		 * @param string $all_contents The concatenated CSS files content that was fetched from Google.
 		 * @param string $url          The Google Fonts URL that was fetched.

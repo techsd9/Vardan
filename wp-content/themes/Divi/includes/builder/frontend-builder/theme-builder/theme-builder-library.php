@@ -596,7 +596,23 @@ function et_theme_builder_library_update_item_data( $payload ) {
 					$meta_input = array(); // Reset.
 				}
 
-				$templates = $_->array_get( $content_details, 'templates', array() );
+				$templates   = $_->array_get( $content_details, 'templates', array() );
+				$portability = et_core_portability_load( 'et_theme_builder' );
+
+				// Import global colors.
+				$layouts = $_->array_get( $content_details, 'layouts', [] );
+				foreach ( $layouts as $layout ) {
+					if ( ! empty( $layout['global_colors'] ) ) {
+						$portability->import_global_colors( $layout['global_colors'] );
+					}
+				}
+
+				// Import presets.
+				$presets_json = $_->array_get( $content_details, 'presets', '' );
+				if ( ! empty( $presets_json ) ) {
+					$presets = json_decode( stripslashes( $presets_json ), true );
+					$portability->import_global_presets( $presets );
+				}
 
 				foreach ( $templates as $template ) :
 					/**

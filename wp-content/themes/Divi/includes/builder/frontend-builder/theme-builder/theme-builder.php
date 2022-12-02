@@ -510,7 +510,14 @@ function et_theme_builder_trash_draft_and_unused_posts() {
 	$mark_meta_key  = '_et_theme_builder_marked_as_unused';
 	$live_id        = et_theme_builder_get_theme_builder_post_id( true, false );
 	$draft_id       = et_theme_builder_get_theme_builder_post_id( false, false );
-	$has_permission = current_user_can( 'delete_post', $draft_id ) && ET_THEME_BUILDER_TEMPLATE_POST_TYPE === get_post_type( $draft_id );
+	$post_types     = array(
+		ET_THEME_BUILDER_TEMPLATE_POST_TYPE,
+		ET_THEME_BUILDER_THEME_BUILDER_POST_TYPE,
+		ET_THEME_BUILDER_HEADER_LAYOUT_POST_TYPE,
+		ET_THEME_BUILDER_BODY_LAYOUT_POST_TYPE,
+		ET_THEME_BUILDER_FOOTER_LAYOUT_POST_TYPE,
+	);
+	$has_permission = current_user_can( 'delete_post', $draft_id ) && in_array( get_post_type( $draft_id ), $post_types, true );
 
 	if ( $draft_id > 0 && $has_permission ) {
 		wp_trash_post( $draft_id );
@@ -537,12 +544,7 @@ function et_theme_builder_trash_draft_and_unused_posts() {
 	// Mark unreferenced layouts for trashing.
 	$posts_to_mark = new WP_Query(
 		array(
-			'post_type'              => array(
-				ET_THEME_BUILDER_TEMPLATE_POST_TYPE,
-				ET_THEME_BUILDER_HEADER_LAYOUT_POST_TYPE,
-				ET_THEME_BUILDER_BODY_LAYOUT_POST_TYPE,
-				ET_THEME_BUILDER_FOOTER_LAYOUT_POST_TYPE,
-			),
+			'post_type'              => $post_types,
 			'post__not_in'           => $used_posts,
 			'posts_per_page'         => -1,
 			'fields'                 => 'ids',
@@ -562,13 +564,6 @@ function et_theme_builder_trash_draft_and_unused_posts() {
 	foreach ( $posts_to_mark->posts as $post_id ) {
 		update_post_meta( $post_id, $mark_meta_key, date( 'Y-m-d H:i:s' ) ); // phpcs:ignore WordPress.DateTime.RestrictedFunctions.date_date -- No need to use gmdate.
 	}
-
-	$post_types = array(
-		ET_THEME_BUILDER_TEMPLATE_POST_TYPE,
-		ET_THEME_BUILDER_HEADER_LAYOUT_POST_TYPE,
-		ET_THEME_BUILDER_BODY_LAYOUT_POST_TYPE,
-		ET_THEME_BUILDER_FOOTER_LAYOUT_POST_TYPE,
-	);
 
 	// Trash any posts marked more than 7 days ago.
 	// We only trash up to 50 posts at a time in order to avoid performance issues.
@@ -593,7 +588,9 @@ function et_theme_builder_trash_draft_and_unused_posts() {
 	);
 
 	foreach ( $posts_to_trash->posts as $post_id ) {
-		if ( current_user_can( 'delete_post', $post_id ) && in_array( get_post_type( $post_id ), $post_types, true ) ) {
+		$has_permission = current_user_can( 'delete_post', $post_id ) && in_array( get_post_type( $post_id ), $post_types, true );
+
+		if ( $has_permission ) {
 			wp_trash_post( $post_id );
 		}
 	}

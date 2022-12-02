@@ -1,3 +1,23 @@
+version 4.19.2 ( updated 11-29-2022 )
+- Fixed issue where presets where not importing when tb library item is duplicated from cloud to local.
+- Fixed divider view always being 100% in phone view in VB.
+- Fixed issue with image border styles in Blog module images that were not applying properly in some cases.
+- Fixed bug where backup exists popup shows every time when opening Theme Builder.
+- Fixed Replace Existing Content option in Layouts Library.
+- Fixed server error when deleting items too quickly from Divi Cloud.
+- Fixed issue where the code snippet library was not closing on ESC keyboard shortcut.
+- Fixed JS error that occurs on saving empty content to the cloud from code snippet editor modal.
+	* core/code-snippets/app/store/code-snippets-library/sequences.js
+	* core/code-snippets/app/store/edit/sequences.js
+	* includes/builder/class-et-builder-google-fonts-feature.php
+	* includes/builder/core.php
+	* includes/builder/framework.php
+	* includes/builder/frontend-builder/bundle.js
+	* includes/builder/frontend-builder/theme-builder/theme-builder-library.php
+	* includes/builder/frontend-builder/theme-builder/theme-builder.php
+	* includes/builder/functions.php
+	* includes/builder/module/Blog.php
+
 version 4.19.1 ( updated 11-17-2022 )
 - Fixed the issue when user cannot drag and drop files into Code Snippets Import Modal in some cases.
 - Fixed the issue when user could exceed the free items limit on the Cloud during bulk upload.

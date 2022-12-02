@@ -274,6 +274,7 @@ if ( wp_doing_ajax() && ! is_customize_preview() ) {
 			'et_builder_ajax_save_domain_token',
 			'et_fb_fetch_before_after_components',
 			'et_code_snippets_library_get_items',
+			'et_builder_global_colors_get',
 		),
 	);
 
