@@ -242,7 +242,8 @@ function et_fb_get_dynamic_backend_helpers() {
 		? get_post( get_post_thumbnail_id()->post_title )
 		: false;
 
-	$request_type = $post_type;
+	$request_type  = $post_type;
+	$user_cloud_id = 0;
 
 	// Set request_type on 404 pages.
 	if ( is_404() ) {
@@ -269,6 +270,8 @@ function et_fb_get_dynamic_backend_helpers() {
 		if ( ! empty( $_GET['cloudItem'] ) && get_post_status( $post_id ) ) { // phpcs:ignore WordPress.Security.NonceVerification -- This function does not change any state, and is therefore not susceptible to CSRF.
 			$remote_item_id  = (int) sanitize_text_field( $_GET['cloudItem'] ); // phpcs:ignore WordPress.Security.NonceVerification -- This function does not change any state, and is therefore not susceptible to CSRF.
 			$layout_location = 'cloud';
+
+			$user_cloud_id = isset( $_GET['userCloudId'] ) ? sanitize_text_field( $_GET['userCloudId'] ) : 0; // phpcs:ignore WordPress.Security.NonceVerification -- This function does not change any state, and is therefore not susceptible to CSRF.
 		}
 	}
 
@@ -329,6 +332,7 @@ function et_fb_get_dynamic_backend_helpers() {
 		'layoutBuiltFor'               => $layout_built_for,
 		'hasPredefinedContent'         => $has_predefined_content,
 		'remoteItemId'                 => $remote_item_id,
+		'userCloudId'                  => $user_cloud_id,
 		'publishCapability'            => ( is_page() && ! current_user_can( 'publish_pages' ) ) || ( ! is_page() && ! current_user_can( 'publish_posts' ) ) ? 'no_publish' : 'publish',
 		'ajaxUrl'                      => is_ssl() ? admin_url( 'admin-ajax.php' ) : admin_url( 'admin-ajax.php', 'http' ),
 		'et_account'                   => et_core_get_et_account(),
@@ -2111,10 +2115,12 @@ function et_fb_get_static_backend_helpers( $post_type ) {
 			'importButton'         => esc_html__( 'Import Divi Builder Layout', 'et_builder' ),
 			'noFile'               => esc_html__( 'No File Selected', 'et_builder' ),
 			'chooseFile'           => esc_html__( 'Choose File', 'et_builder' ),
+			'chooseFiles'           => esc_html__( 'Choose Files', 'et_builder' ),
 			'portabilityOptions'   => esc_html__( 'Options', 'et_builder' ),
 			'includeGlobalPresets' => esc_html__( 'Include Presets', 'et_builder' ),
 			'applyGlobalPresets'   => esc_html__( 'Apply To Exported Layout', 'et_builder' ),
 			'importContextFail'    => esc_html__( 'This file should not be imported in this context.', 'et_builder' ),
+			'bulkImportContextFail'    => esc_html__( 'These files should not be imported in this context.', 'et_builder' ),
 			'closeWindow'              => esc_html__( 'Close Window', 'et_builder' ),
 			'no'                       => esc_html__( 'No', 'et_builder' ),
 			'yes'                      => esc_html__( 'Yes', 'et_builder' ),
@@ -2157,6 +2163,9 @@ function et_fb_get_static_backend_helpers( $post_type ) {
 					'includeGlobalPresets' => esc_html__( 'Import Presets', 'et_builder' ),
 					'imported'             => esc_html__( 'imported', 'et_builder' ),
 					'ImportToCloud'        => esc_html__( 'Import To Cloud', 'et_builder' ),
+					'selectedFiles'        => esc_html__( 'Selected Files:', 'et_builder' ),
+					'drageFiles'           => esc_html__( 'Drag Files Here', 'et_builder' ),
+					'selectFiles'          => esc_html__( 'Select Files To Import', 'et_builder' ),
 				),
 				'export' => array(
 					'applyGlobalPresets' => esc_html__( 'Apply Presets To Exported Layout' ),

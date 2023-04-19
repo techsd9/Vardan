@@ -2471,7 +2471,7 @@ class ET_Dynamic_Assets {
 				$this->_enqueue_fitvids = true;
 			}
 
-			if ( $this->_enqueue_fitvids || et_disable_js_on_demand() ) {
+			if ( $this->_enqueue_fitvids || et_disable_js_on_demand() || et_is_media_embedded_in_content( $this->_all_content ) ) {
 				wp_enqueue_script( 'fitvids', ET_BUILDER_URI . '/feature/dynamic-assets/assets/js/jquery.fitvids.js', array( 'jquery' ), ET_CORE_VERSION, true );
 			}
 		}
@@ -2621,7 +2621,7 @@ class ET_Dynamic_Assets {
 	 * @since 4.10.0
 	 */
 	public function get_preset_attributes( $content ) {
-		$all_builder_presets = et_get_option( 'builder_global_presets', (object) array(), '', true );
+		$all_builder_presets = et_get_option( 'builder_global_presets_ng', (object) array(), '', true, false, '', '', true );
 		$presets_attributes  = array();
 
 		foreach ( $all_builder_presets as $module => $module_presets ) {

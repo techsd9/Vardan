@@ -23,7 +23,7 @@
 define( 'DB_NAME', 'vardan' );
 
 /** Database username */
-define( 'DB_USER', 'vardan' );
+define( 'DB_USER', 'vardaan_shorthand' );
 
 /** Database password */
 define( 'DB_PASSWORD', 'Vardan1' );
@@ -32,7 +32,7 @@ define( 'DB_PASSWORD', 'Vardan1' );
 define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'tI}>?}3#>ug#_H30{TGw_7{Qv#cBnlY0geKh008u4RFds<5ALk<O&!r9^E_s.AO&' );
-define( 'SECURE_AUTH_KEY',  'dFN2P9~3!E*Tz=P7.n+A{1tms`5A}-Yt!t{VG]$0H#2r_PJqNZ&73gX4zO/~RB,,' );
-define( 'LOGGED_IN_KEY',    'I6T{,24&6x!.@ =Y!@zsn#XqH)((4V&M. Z#&%LhlwLEL&`9iT|G</m8d&@dqo<F' );
-define( 'NONCE_KEY',        ',qDac[YR7|aZ-w>.T!1CP(C|k;3&Q>AUM?Dlx_Sb-|kl|P7w>H<GSzE/ }cu!H8C' );
-define( 'AUTH_SALT',        'GKk}J9ymt!|u,d-!)/O17VeZW*Z,hzD1+8N:(%^]}Jb}h9Gt A=pul<VwJooO!ee' );
-define( 'SECURE_AUTH_SALT', '1pW1TOM!Czg`]QN5icRGJ+ui(oij<vyqsBLgXD3=|Y[*9s8%6`[HNy=C/MGC,%PF' );
-define( 'LOGGED_IN_SALT',   '**@ilcJBJ8je vx!%F92<uWt@>-t%DORDz721~^]4 I.Cylb!yhihWZ+IdV+q|&A' );
-define( 'NONCE_SALT',       'Fw|t[/+-w ICK(aJDnb=(,*~#U/.ms&AA[&*-K=,kNsQ<sOMP0!a6C|3_O~]5CL8' );
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 

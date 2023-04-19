@@ -113,9 +113,10 @@ class ET_Core_Portability {
 			 */
 			do_action( 'et_core_portability_import_file', $upload['file'] );
 
-			$temp_file = $this->temp_file( $temp_file_id, 'et_core_import', $upload['file'] );
-			$import = json_decode( $filesystem->get_contents( $temp_file ), true );
-			$import = $this->validate( $import );
+			$temp_file    = $this->temp_file( $temp_file_id, 'et_core_import', $upload['file'] );
+			$file_content = preg_replace( '/\x{FEFF}/u', '', $filesystem->get_contents( $temp_file ) ); // Replace BOM with empty string.
+			$import       = json_decode( $file_content, true );
+			$import       = $this->validate( $import );
 
 			if ( $return_json ) {
 				return array( 'jsonFromFile' => $import );
@@ -413,18 +414,19 @@ class ET_Core_Portability {
 				foreach ( $data as $post ) {
 					$shortcode_object = et_fb_process_shortcode( $post->post_content );
 
+					// We have to always process global presets to get the global colors correctly.
+					$global_presets_from_post = $this->get_used_global_presets( $shortcode_object, $used_global_presets );
+					$used_global_presets      = array_merge(
+						$global_presets_from_post,
+						$used_global_presets
+					);
+
+					$used_global_colors = $this->_get_used_global_colors( $shortcode_object, $used_global_colors, $global_presets_from_post );
+
 					if ( $apply_global_presets ) {
 						$shortcode_object   = et_fb_process_to_shortcode( $shortcode_object, $options, '', false );
 						$post->post_content = $shortcode_object;
-					} else {
-						$global_presets_from_post = $this->get_used_global_presets( $shortcode_object, $used_global_presets );
-						$used_global_presets      = array_merge(
-							$global_presets_from_post,
-							$used_global_presets
-						);
 					}
-
-					$used_global_colors = $this->_get_used_global_colors( $shortcode_object, $used_global_colors, $global_presets_from_post );
 				}
 
 				if ( ! empty ( $used_global_presets ) ) {
@@ -1192,7 +1194,8 @@ class ET_Core_Portability {
 			}
 		}
 
-		et_update_option( ET_Builder_Global_Presets_Settings::GLOBAL_PRESETS_OPTION, $global_presets );
+		// Update option for product setting (last attr in args list).
+		et_update_option( ET_Builder_Global_Presets_Settings::GLOBAL_PRESETS_OPTION, $global_presets, false, '', '', true );
 
 		if ( ! $is_temp_presets ) {
 			$global_presets_history = ET_Builder_Global_Presets_History::instance();

@@ -480,11 +480,17 @@ class ET_Builder_Library {
 		$posts = $this->layouts
 			->query()
 			->not()->with_meta( '_et_pb_built_for_post_type', $extra_layout_post_type )
-			->run( array( 'post_status' => array( 'publish', 'trash' ) ) );
+			->run(
+				array(
+					'post_status' => array( 'publish', 'trash' ),
+					'fields'      => 'ids',
+				)
+			);
 
-		$posts = self::$_->array_sort_by( is_array( $posts ) ? $posts : array( $posts ), 'post_name' );
+		$posts = is_array( $posts ) ? $posts : array( $posts );
 
-		foreach ( $posts as $post ) {
+		foreach ( $posts as $post_id ) {
+			$post   = get_post( $post_id );
 			$layout = new stdClass();
 
 			setup_postdata( $post );
@@ -1541,7 +1547,7 @@ class ET_Builder_Library {
 			'ID' => $item_id,
 		);
 
-		$is_library_post_type = in_array( get_post_type( $item_id ), et_builder_get_enabled_builder_post_types(), true );
+		$is_library_post_type = 'et_pb_layout' === get_post_type( $item_id );
 
 		if ( ! empty( $update_details['newCategoryName'] ) && current_user_can( 'manage_categories' ) ) {
 			$new_names_array = explode( ',', $update_details['newCategoryName'] );
@@ -1591,6 +1597,9 @@ class ET_Builder_Library {
 			case 'duplicate_and_delete':
 			case 'duplicate_premade_item':
 			case 'save_existing_page':
+			case 'split_layout':
+			case 'split_section':
+			case 'split_row':
 				$is_item_from_cloud = isset( $update_details['shortcode'] );
 				$title              = sanitize_text_field( $update_details['itemName'] );
 				$meta_input         = array();
