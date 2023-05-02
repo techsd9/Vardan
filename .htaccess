@@ -8,7 +8,7 @@ RewriteRule ^(.*)$ http\:\/\/localhost\:8080\/vardan\/$1 [R=301,L]
 # Start WPFC Exclude
 # End WPFC Exclude
 # Start_WPFC_Exclude_Admin_Cookie
-RewriteCond %{HTTP:Cookie} !wordpress_logged_in_[^\=]+\=Vardaan_Shorthand
+RewriteCond %{HTTP:Cookie} !wordpress_logged_in_[^\=]+\=Vardaan_Shorthand|vardan_user
 # End_WPFC_Exclude_Admin_Cookie
 RewriteCond %{HTTP_HOST} ^localhost:8080
 RewriteCond %{HTTP_USER_AGENT} !(facebookexternalhit|WP_FASTEST_CACHE_CSS_VALIDATOR|Twitterbot|LinkedInBot|WhatsApp|Mediatoolkitbot)
