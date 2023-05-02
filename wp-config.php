@@ -23,7 +23,7 @@
 define( 'DB_NAME', 'vardan' );
 
 /** Database username */
-define( 'DB_USER', 'vardaan_shorthand' );
+define( 'DB_USER', 'vardan_user' );
 
 /** Database password */
 define( 'DB_PASSWORD', 'Vardan1' );

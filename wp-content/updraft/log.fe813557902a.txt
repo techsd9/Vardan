@@ -1,0 +1,493 @@
+0000.001 (0) Opened log file at time: Wed, 19 Apr 2023 07:08:22 +0000 on http://localhost:8080/vardan
+0000.017 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.3 WP: 6.2 PHP: 8.1.2 (apache2handler, Windows NT DESKTOP-TIVGQNQ 10.0 build 19044 (Windows 10) AMD64) MySQL: 10.4.22-MariaDB (max packet size=1048576) WPLANG: en_US Server: Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.2 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 44.1M | 46M) multisite: N openssl: OpenSSL 1.1.1m  14 Dec 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.028 (0) Free space on disk containing Updraft's temporary directory: 168442.2 MB
+0000.041 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.053 (0) Semaphore (fd, wp_options) being initialised
+0000.086 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.104 (0) Set semaphore last lock (fd) time to 2023-04-19 07:08:22
+0000.113 (0) Semaphore lock (fd) complete
+0000.151 (0) Backup run: resumption=0, nonce=fe813557902a, file_nonce=fe813557902a begun at=1681888102 (0s ago), job type=backup
+0000.163 (0) Scheduling a resumption (1) after 300 seconds (1681888402) in case this run gets aborted
+0000.189 (0) Checking if we have a zip executable available
+0000.212 (0) Creation of backups of directories: beginning
+0000.246 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.736 (0) Entity excluded by filter: plugins/wp-fastest-cache/images/icon-24x24.png
+0000.746 (0) Entity excluded by filter: plugins/wp-fastest-cache/images/icon-32x32.png
+0000.797 (0) Total entities for the zip file: 219 directories, 1367 files (0 skipped as non-modified), 25.7 MB
+0000.887 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.967 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0001.056 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0001.131 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0001.218 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0001.292 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0001.378 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0001.447 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0001.530 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0001.604 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0001.620 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (23.2 MB, 1367 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0003.360 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 1100 files added (on-disk size: 6819.2 KB)
+0003.427 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 1200 files added (on-disk size: 6819.2 KB)
+0003.506 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.tmp: 1300 files added (on-disk size: 6819.2 KB)
+0004.149 (0) Creating zip file manifest (backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.list-temp.tmp)
+0004.177 (0) Successfully created zip file manifest (size: 116431)
+0004.332 (0) Created plugins zip (0) - 7770.4 KB in 4.1 s (1911.8 KB/s) (sha1: fdda31e3bffeee2e693d7695989465598676dc7a, sha256: d8e32b8a239206b0bf39826819f9699994a2805ba3a47c84ba30020cc3a02da9)
+0004.354 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0004.359 (0) No remote despatch: user chose no remote backup service
+0004.363 (0) Recording as successfully uploaded: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip
+0004.373 (0) Deleting zip manifest (backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip.list.tmp)
+0004.387 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0004.392 (0) Number of backup sets in history: 0; groups (db): 1
+0004.397 (0) Number of backup sets in history: 0; groups (files): 1
+0004.402 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0004.434 (0) Beginning creation of dump of themes (split every: 400 MB)
+0004.941 (0) Total entities for the zip file: 210 directories, 1449 files (0 skipped as non-modified), 69 MB
+0005.011 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0005.075 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0005.140 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0005.217 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0005.293 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0005.358 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0005.421 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0005.488 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0005.561 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.4 MB, 1449 files batched, 885 (885) added so far); re-opening (prior size: 0 KB)
+0008.363 (0) A useful amount of data was added after this amount of zip processing: 4.1 s (normalised: 4.1 s, rate: 6296.8 KB/s)
+0008.373 (0) Performance is good - will increase the amount of data we attempt to batch (time=4.1240150928497, normalised_time=4.0655740172452, max_time=8.368145942688, data points known=1, old_max_bytes=26214400, new_max_bytes=38687378)
+0008.397 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 900 files added (on-disk size: 7305.3 KB)
+0008.467 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 1000 files added (on-disk size: 7305.3 KB)
+0008.530 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 1100 files added (on-disk size: 7305.3 KB)
+0008.603 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 1200 files added (on-disk size: 7305.3 KB)
+0008.677 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 1300 files added (on-disk size: 7305.3 KB)
+0008.748 (0) Zip: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.tmp: 1400 files added (on-disk size: 7305.3 KB)
+0008.800 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 36.9 MB added on this batch (43.6 MB, 1449 files batched, 563 (1448) added so far); re-opening (prior size: 7305.3 KB)
+0012.689 (0) A useful amount of data was added after this amount of zip processing: 4.4 s (normalised: 3.8 s, rate: 10032.2 KB/s)
+0012.700 (0) Performance is good - will increase the amount of data we attempt to batch (time=4.4496099948883, normalised_time=3.7659431649153, max_time=12.693377971649, data points known=1, old_max_bytes=38687378, new_max_bytes=78239127)
+0012.927 (0) Creating zip file manifest (backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.list-temp.tmp)
+0012.953 (0) Successfully created zip file manifest (size: 114683)
+0013.354 (0) Created themes zip (0) - 30350.4 KB in 8.9 s (3410.5 KB/s) (sha1: 1da78a1db56ac91ee5b24db3783f5de128d842d8, sha256: 9840dbe1e6747b7cedcea1460260c848c614d30545932afe41df7765d63c0f22)
+0013.383 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0013.389 (0) No remote despatch: user chose no remote backup service
+0013.393 (0) Recording as successfully uploaded: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip
+0013.403 (0) Deleting zip manifest (backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip.list.tmp)
+0013.428 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0013.444 (0) Number of backup sets in history: 0; groups (db): 1
+0013.456 (0) Number of backup sets in history: 0; groups (files): 1
+0013.469 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0013.532 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0013.545 (0) Looking for candidates to backup in: C:\xampp\htdocs\vardan/wp-content/uploads
+0013.559 (0) finding files: .htaccess: adding to list (1)
+0013.572 (0) finding files: 2022: adding to list (2)
+0013.586 (0) finding files: 2023: adding to list (3)
+0013.597 (0) finding files: smush-dfffd3b7b2bec997417e.log: adding to list (4)
+0013.603 (0) finding files: wpforms: adding to list (5)
+0013.608 (0) finding files: wpmc-trash: adding to list (6)
+0013.613 (0) finding files: wpo: adding to list (7)
+0013.618 (0) finding files: wpo-plugins-tables-list.json: adding to list (8)
+0013.623 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0013.642 (0) PHP event: code E_WARNING: opendir(C:\xampp\htdocs\vardan\wp-content\uploads\2022\12): Access is deni (code: 5) (line 3099, C:\xampp\htdocs\vardan\wp-content\plugins\updraftplus\backup.php)
+0013.654 (0) PHP event: code E_WARNING: opendir(C:\xampp\htdocs\vardan\wp-content\uploads\2022\12): Failed to open directory: No such file or directory (line 3099, C:\xampp\htdocs\vardan\wp-content\plugins\updraftplus\backup.php)
+0013.664 (0) Failed to open directory: C:\xampp\htdocs\vardan\wp-content\uploads\2022\12
+0013.672 (0) An error condition has occurred for the first time during this job
+0013.688 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-150x150.png
+0013.695 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-180x180.png
+0013.705 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-192x192.png
+0013.715 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-270x270.png
+0013.725 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-300x300.png
+0013.735 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-32x32.png
+0013.745 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-400x250.png
+0013.754 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-400x284.png
+0013.766 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-400x512.png
+0013.776 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-480x480.png
+0013.786 (0) Entity excluded by filter: 2023/04/cropped-VardanLogoVSquareFilledRed_small-510x382.png
+0013.796 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-1080x675.jpg
+0013.809 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-150x150.jpg
+0013.818 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-225x300.jpg
+0013.831 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-400x250.jpg
+0013.841 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-400x284.jpg
+0013.851 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-400x516.jpg
+0013.859 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-480x640.jpg
+0013.867 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-510x382.jpg
+0013.872 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-768x1024.jpg
+0013.877 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x1440-1-980x1307.jpg
+0013.882 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-1024x640.jpg
+0013.886 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-150x150.jpg
+0013.890 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-300x188.jpg
+0013.894 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-400x250.jpg
+0013.907 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-400x284.jpg
+0013.916 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-400x516.jpg
+0013.926 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-480x300.jpg
+0013.933 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-510x382.jpg
+0013.942 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-768x480.jpg
+0013.954 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1080x675-1-980x613.jpg
+0013.964 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-1080x1440.jpg
+0013.973 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-1080x675.jpg
+0013.981 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-150x150.jpg
+0013.991 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-225x300.jpg
+0014.003 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-400x250.jpg
+0014.012 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-400x284.jpg
+0014.025 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-400x516.jpg
+0014.040 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-480x640.jpg
+0014.053 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-510x382.jpg
+0014.070 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-768x1024.jpg
+0014.085 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1152x1536-1-980x1307.jpg
+0014.099 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-1080x1440.jpg
+0014.109 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-1080x675.jpg
+0014.114 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-1152x1536.jpg
+0014.119 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-150x150.jpg
+0014.126 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-225x300.jpg
+0014.131 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-400x250.jpg
+0014.136 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-400x284.jpg
+0014.141 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-400x516.jpg
+0014.147 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-480x640.jpg
+0014.157 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-510x382.jpg
+0014.162 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-768x1024.jpg
+0014.167 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-1280x1707-1-980x1307.jpg
+0014.174 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-225x300-1-150x150.jpg
+0014.183 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-225x300-1-225x250.jpg
+0014.188 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-225x300-1-225x284.jpg
+0014.194 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x250-1-150x150.jpg
+0014.203 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x250-1-300x188.jpg
+0014.209 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x284-1-150x150.jpg
+0014.217 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x284-1-300x213.jpg
+0014.221 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x284-1-400x250.jpg
+0014.227 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x516-1-150x150.jpg
+0014.236 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x516-1-233x300.jpg
+0014.242 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x516-1-400x250.jpg
+0014.247 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x516-1-400x284.jpg
+0014.251 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-400x516-1-400x382.jpg
+0014.257 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-480x640-1-150x150.jpg
+0014.266 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-480x640-1-225x300.jpg
+0014.271 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-480x640-1-400x250.jpg
+0014.277 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-480x640-1-400x284.jpg
+0014.282 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-480x640-1-400x516.jpg
+0014.287 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-480x640-1-480x382.jpg
+0014.292 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-510x382-1-150x150.jpg
+0014.296 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-510x382-1-300x225.jpg
+0014.300 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-510x382-1-400x250.jpg
+0014.305 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-510x382-1-400x284.jpg
+0014.309 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-510x382-1-400x382.jpg
+0014.313 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-510x382-1-480x360.jpg
+0014.317 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-768x1024-1-150x150.jpg
+0014.325 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-768x1024-1-225x300.jpg
+0014.333 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-768x1024-1-400x250.jpg
+0014.338 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-768x1024-1-400x284.jpg
+0014.342 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-768x1024-1-400x516.jpg
+0014.350 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-768x1024-1-480x640.jpg
+0014.353 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-768x1024-1-510x382.jpg
+0014.357 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-768x1024-1-768x675.jpg
+0014.361 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-980x1307-1-150x150.jpg
+0014.366 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-980x1307-1-225x300.jpg
+0014.369 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-980x1307-1-400x250.jpg
+0014.373 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-980x1307-1-400x284.jpg
+0014.378 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-980x1307-1-400x516.jpg
+0014.381 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-980x1307-1-480x640.jpg
+0014.385 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-980x1307-1-510x382.jpg
+0014.390 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-980x1307-1-768x1024.jpg
+0014.394 (0) Entity excluded by filter: 2023/04/IMG20180124121732-1-768x1024_small-20221202-225337-980x1307-1-980x675.jpg
+0014.399 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-1024x492.png
+0014.406 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-1080x519.png
+0014.410 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-1080x660.png
+0014.414 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-1280x615.png
+0014.419 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-150x150.png
+0014.424 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-300x144.png
+0014.436 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-400x250.png
+0014.440 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-400x284.png
+0014.445 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-400x516.png
+0014.448 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-480x231.png
+0014.452 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-510x382.png
+0014.456 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-768x369.png
+0014.460 (0) Entity excluded by filter: 2023/04/Vardaan_Directions-980x471.png
+0014.464 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1024x109-1-150x109.png
+0014.473 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1024x109-1-300x32.png
+0014.477 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1024x109-1-400x109.png
+0014.480 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1024x109-1-480x51.png
+0014.484 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1024x109-1-510x109.png
+0014.488 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1024x109-1-768x82.png
+0014.492 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1024x109-1-980x104.png
+0014.498 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1024x109.png
+0014.505 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x115-1-1024x109.png
+0014.509 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x115-1-150x115.png
+0014.513 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x115-1-300x32.png
+0014.517 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x115-1-400x115.png
+0014.521 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x115-1-480x51.png
+0014.527 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x115-1-510x115.png
+0014.533 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x115-1-768x82.png
+0014.537 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x115-1-980x104.png
+0014.542 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x115.png
+0014.546 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-1024x640.png
+0014.550 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-150x150.png
+0014.556 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-300x188.png
+0014.559 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-400x250.png
+0014.563 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-400x284.png
+0014.567 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-400x516.png
+0014.571 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-480x300.png
+0014.575 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-510x382.png
+0014.584 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-768x480.png
+0014.587 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675-1-980x613.png
+0014.590 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1080x675.png
+0014.596 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-1024x110.png
+0014.600 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-1080x116.png
+0014.604 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-1080x137.png
+0014.609 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-150x137.png
+0014.612 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-300x32.png
+0014.616 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-400x137.png
+0014.620 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-480x51.png
+0014.628 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-510x137.png
+0014.632 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-768x82.png
+0014.637 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137-1-980x105.png
+0014.641 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1280x137.png
+0014.649 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-150x150.png
+0014.657 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-1024x109.png
+0014.666 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-1080x115.png
+0014.671 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-1080x164.png
+0014.676 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-1280x137.png
+0014.680 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-150x150.png
+0014.685 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-300x32.png
+0014.689 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-400x164.png
+0014.693 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-480x51.png
+0014.698 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-510x164.png
+0014.709 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-768x82.png
+0014.713 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164-1-980x105.png
+0014.723 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-1536x164.png
+0014.730 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-1024x109.png
+0014.739 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-1080x115.png
+0014.748 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-1080x218.png
+0014.757 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-1280x136.png
+0014.766 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-150x150.png
+0014.774 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-1536x164.png
+0014.783 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-300x32.png
+0014.791 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-400x218.png
+0014.800 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-480x51.png
+0014.810 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-510x218.png
+0014.818 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-768x82.png
+0014.827 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218-1-980x104.png
+0014.836 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2048x218.png
+0014.846 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-1024x273.png
+0014.854 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-1080x288.png
+0014.863 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-1080x675.png
+0014.870 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-1280x341.png
+0014.874 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-150x150.png
+0014.877 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-1536x410.png
+0014.881 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-2048x546.png
+0014.885 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-300x80.png
+0014.890 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-400x250.png
+0014.895 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-400x284.png
+0014.906 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-400x516.png
+0014.918 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-480x128.png
+0014.954 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-510x382.png
+0014.987 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-768x205.png
+0014.995 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768-1-980x261.png
+0015.010 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-2880x768.png
+0015.024 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-300x32-1-150x32.png
+0015.038 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-300x32.png
+0015.051 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x250-1-150x150.png
+0015.062 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x250-1-300x188.png
+0015.075 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x250.png
+0015.088 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x284-1-150x150.png
+0015.100 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x284-1-300x213.png
+0015.112 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x284-1-400x250.png
+0015.123 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x284.png
+0015.137 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x516-1-150x150.png
+0015.147 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x516-1-233x300.png
+0015.160 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x516-1-400x250.png
+0015.169 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x516-1-400x284.png
+0015.180 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x516-1-400x382.png
+0015.187 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-400x516.png
+0015.193 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-480x51-1-150x51.png
+0015.199 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-480x51-1-300x32.png
+0015.204 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-480x51-1-400x51.png
+0015.213 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-480x51.png
+0015.218 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-510x382-1-150x150.png
+0015.224 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-510x382-1-300x225.png
+0015.231 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-510x382-1-400x250.png
+0015.237 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-510x382-1-400x284.png
+0015.244 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-510x382-1-400x382.png
+0015.250 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-510x382-1-480x360.png
+0015.259 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-510x382.png
+0015.265 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-768x82-1-150x82.png
+0015.271 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-768x82-1-300x32.png
+0015.277 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-768x82-1-400x82.png
+0015.284 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-768x82-1-480x51.png
+0015.290 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-768x82-1-510x82.png
+0015.296 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-768x82.png
+0015.306 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-980x105-1-150x105.png
+0015.318 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-980x105-1-300x32.png
+0015.330 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-980x105-1-400x105.png
+0015.340 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-980x105-1-480x51.png
+0015.351 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-980x105-1-510x105.png
+0015.359 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-980x105-1-768x82.png
+0015.368 (0) Entity excluded by filter: 2023/04/VardanLogoVSquareFilledRed_title-980x105.png
+0015.379 (0) Entity excluded by filter: 2023/04/Vardan_map-150x150.png
+0015.386 (0) Entity excluded by filter: 2023/04/Vardan_map-300x166-1-150x150.png
+0015.390 (0) Entity excluded by filter: 2023/04/Vardan_map-300x166.png
+0015.398 (0) Entity excluded by filter: 2023/04/Vardan_map-400x250-1-150x150.png
+0015.401 (0) Entity excluded by filter: 2023/04/Vardan_map-400x250-1-300x188.png
+0015.407 (0) Entity excluded by filter: 2023/04/Vardan_map-400x250.png
+0015.419 (0) Entity excluded by filter: 2023/04/Vardan_map-400x253-1-150x150.png
+0015.428 (0) Entity excluded by filter: 2023/04/Vardan_map-400x253-1-300x190.png
+0015.438 (0) Entity excluded by filter: 2023/04/Vardan_map-400x253-1-400x250.png
+0015.444 (0) Entity excluded by filter: 2023/04/Vardan_map-400x253.png
+0015.463 (0) Total entities for the zip file: 12 directories, 56 files (0 skipped as non-modified), 4.1 MB
+0015.741 (0) Creating zip file manifest (backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-uploads.zip.list-temp.tmp)
+0015.757 (0) Successfully created zip file manifest (size: 4048)
+0015.825 (0) Created uploads zip (0) - 3200.4 KB in 2.2 s (1464 KB/s) (sha1: 403aa3257b7e523ef7a3e678e1940ab71347e2a9, sha256: be023d3ced648b7bcabc016508acaca0fb8a8f94fdad224e7ce90ae0eacdc5b4)
+0015.855 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0015.865 (0) No remote despatch: user chose no remote backup service
+0015.872 (0) Recording as successfully uploaded: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-uploads.zip
+0015.881 (0) Deleting zip manifest (backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-uploads.zip.list.tmp)
+0015.888 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0015.892 (0) Number of backup sets in history: 0; groups (db): 1
+0015.896 (0) Number of backup sets in history: 0; groups (files): 1
+0015.900 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0015.943 (0) Beginning backup of other directories found in the content directory (index: 0)
+0015.952 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0015.963 (0) Looking for candidates to backup in: C:\xampp\htdocs\vardan/wp-content
+0015.975 (0) finding files: cache: skipping: excluded by options
+0015.984 (0) finding files: et-cache: adding to list (1)
+0015.992 (0) finding files: index.php: adding to list (2)
+0016.057 (0) finding files: mu-plugins: adding to list (3)
+0016.073 (0) finding files: plugins: skipping: this is the plugins directory
+0016.085 (0) finding files: themes: skipping: this is the themes directory
+0016.091 (0) finding files: updraft: skipping: this is the updraft directory
+0016.101 (0) finding files: upgrade: skipping: excluded by options
+0016.109 (0) finding files: uploads: skipping: this is the uploads directory
+0016.154 (0) Total entities for the zip file: 3 directories, 2 files (0 skipped as non-modified), 0 MB
+0016.198 (0) Creating zip file manifest (backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-others.zip.list-temp.tmp)
+0016.208 (0) Successfully created zip file manifest (size: 91)
+0016.254 (0) Created others zip (0) - 0.6 KB in 0.1 s (5.4 KB/s) (sha1: df71f58abd8b598a175fda2e2b98e620acc4298a, sha256: 57439d51e10fbb170ccc6d4655a3f4f11820e0c956959df6a2e9a1e31a9ce9e2)
+0016.287 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0016.297 (0) No remote despatch: user chose no remote backup service
+0016.307 (0) Recording as successfully uploaded: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-others.zip
+0016.325 (0) Deleting zip manifest (backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-others.zip.list.tmp)
+0016.351 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0016.362 (0) Number of backup sets in history: 0; groups (db): 1
+0016.371 (0) Number of backup sets in history: 0; groups (files): 1
+0016.376 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0016.424 (0) Saving backup status to database (elements: 8)
+0016.451 (0) Beginning creation of database dump (WordPress DB)
+0016.462 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0016.540 (0) Table wp_options: Total expected rows (via COUNT): 238
+0016.545 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.564 (0) Table wp_options: Rows added in this batch (next record: 2232): 234 (uncompressed bytes in this segment=184961) in 0.06 seconds
+0016.609 (0) Table wp_options: finishing file(s) (2, 30.1 KB)
+0016.643 (0) Table wp_users: Total expected rows (via COUNT): 2
+0016.649 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.661 (0) Table wp_users: Rows added in this batch (next record: 3): 2 (uncompressed bytes in this segment=1592) in 0.03 seconds
+0016.690 (0) Table wp_users: finishing file(s) (2, 0.7 KB)
+0016.730 (0) Table wp_usermeta: Total expected rows (via COUNT): 48
+0016.735 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.750 (0) Table wp_usermeta: Rows added in this batch (next record: 64): 48 (uncompressed bytes in this segment=4636) in 0.04 seconds
+0016.789 (0) Table wp_usermeta: finishing file(s) (2, 1.7 KB)
+0016.831 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0016.841 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=684) in 0.03 seconds
+0016.868 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0016.897 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0016.901 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.911 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2104) in 0.03 seconds
+0016.938 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0016.964 (0) Table wp_links: Total expected rows (via COUNT): 0
+0016.975 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1266) in 0.02 seconds
+0017.001 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0017.035 (0) Table wp_postmeta: Total expected rows (approximate): 1328
+0017.053 (0) Table wp_postmeta: Rows added in this batch (next record: 2032): 1212 (uncompressed bytes in this segment=307996) in 0.04 seconds
+0017.133 (0) Table wp_postmeta: finishing file(s) (2, 28.6 KB)
+0017.274 (0) Table wp_posts: Total expected rows (via COUNT): 419
+0017.279 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.338 (0) Table wp_posts: Rows added in this batch (next record: 711): 419 (uncompressed bytes in this segment=2468842) in 0.19 seconds
+0017.359 (0) Table wp_posts: finishing file(s) (2, 180.4 KB)
+0017.380 (0) Table wp_term_relationships: Total expected rows (approximate): 58
+0017.394 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 58 (uncompressed bytes in this segment=1492) in 0.02 seconds
+0017.416 (0) Table wp_term_relationships: finishing file(s) (2, 0.5 KB)
+0017.457 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 14
+0017.465 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.483 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 16): 14 (uncompressed bytes in this segment=1445) in 0.05 seconds
+0017.533 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0017.572 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0017.581 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=657) in 0.03 seconds
+0017.616 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0017.648 (0) Table wp_terms: Total expected rows (via COUNT): 14
+0017.654 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.666 (0) Table wp_terms: Rows added in this batch (next record: 16): 14 (uncompressed bytes in this segment=1169) in 0.03 seconds
+0017.695 (0) Table wp_terms: finishing file(s) (2, 0.6 KB)
+0017.703 (0) Skipping table (lacks our prefix (wp_)): data
+0017.707 (0) PHP event: code E_WARNING: filemtime(): stat failed for C:\xampp\htdocs\vardan/wp-content/updraft/backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db.gz (line 1924, C:\xampp\htdocs\vardan\wp-content\plugins\updraftplus\backup.php)
+0017.713 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_options.table.tmpr2233.gz (1/13/fopen): adding to final database dump
+0017.723 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_options.table.gz (2/13/fopen): adding to final database dump
+0017.732 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_users.table.tmpr4.gz (3/13/fopen): adding to final database dump
+0017.736 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_users.table.gz (4/13/fopen): adding to final database dump
+0017.743 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_usermeta.table.tmpr65.gz (5/13/fopen): adding to final database dump
+0017.748 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_usermeta.table.gz (6/13/fopen): adding to final database dump
+0017.752 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_commentmeta.table.tmpr0.gz (7/13/fopen): adding to final database dump
+0017.756 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_commentmeta.table.gz (8/13/fopen): adding to final database dump
+0017.764 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_comments.table.tmpr2.gz (9/13/fopen): adding to final database dump
+0017.768 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_comments.table.gz (10/13/fopen): adding to final database dump
+0017.775 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_links.table.tmpr0.gz (11/13/fopen): adding to final database dump
+0017.779 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_links.table.gz (12/13/fopen): adding to final database dump
+0017.787 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_postmeta.table.tmpr2033.gz (13/13/fopen): adding to final database dump
+0017.793 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_postmeta.table.gz (14/13/fopen): adding to final database dump
+0017.801 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_posts.table.tmpr712.gz (15/13/fopen): adding to final database dump
+0017.810 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_posts.table.gz (16/13/fopen): adding to final database dump
+0017.819 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_term_relationships.table.tmpr100001.gz (17/13/fopen): adding to final database dump
+0017.823 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_term_relationships.table.gz (18/13/fopen): adding to final database dump
+0017.830 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_term_taxonomy.table.tmpr17.gz (19/13/fopen): adding to final database dump
+0017.834 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_term_taxonomy.table.gz (20/13/fopen): adding to final database dump
+0017.843 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_termmeta.table.tmpr0.gz (21/13/fopen): adding to final database dump
+0017.851 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_termmeta.table.gz (22/13/fopen): adding to final database dump
+0017.859 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_terms.table.tmpr17.gz (23/13/fopen): adding to final database dump
+0017.867 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db-table-wp_terms.table.gz (24/13/fopen): adding to final database dump
+0017.898 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db.gz: finished writing out complete database file (245.5 KB)
+0017.941 (0) Total database tables backed up: 12 (backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db.gz, size: 251508, sha1: 49a7469141c1a565937a89195e2517f9cd642cbd, sha256: 9a22d480287e6cb79a4ca3ce62f8222c6c074b899c893afd5f48f6f34c005314)
+0017.961 (0) PHP event: code E_DEPRECATED: strlen(): Passing null to parameter #1 ($string) of type string is deprecated (line 2866, C:\xampp\htdocs\vardan\wp-content\plugins\updraftplus\backup.php)
+0017.977 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip: plugins: This file has already been successfully uploaded
+0017.981 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip: themes: This file has already been successfully uploaded
+0017.985 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-uploads.zip: uploads: This file has already been successfully uploaded
+0017.989 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-others.zip: others: This file has already been successfully uploaded
+0017.993 (0) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db.gz: db: This file has not yet been successfully uploaded: will queue
+0017.997 (0) Saving backup history. Total backup size: 40.6 MB
+0018.010 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0018.022 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0018.026 (0) No remote despatch: user chose no remote backup service
+0018.030 (0) Recording as successfully uploaded: backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db.gz
+0018.046 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0018.054 (0) Number of backup sets in history: 1; groups (db): 1
+0018.062 (0) Examining (for databases) backup set with group_id=0, nonce=fe813557902a, datestamp=1681888102 (Apr 19 2023 07:08:22)
+0018.071 (0) This backup set is the backup set just made, so will not be deleted.
+0018.071 (0) Number of backup sets in history: 1; groups (files): 1
+0018.077 (0) Examining (for files) backup set with nonce=fe813557902a, datestamp=1681888102 (Apr 19 2023 07:08:22)
+0018.077 (0) This backup set is the backup set just made, so will not be deleted.
+0018.085 (0) This backup set is the backup set just made, so will not be deleted.
+0018.085 (0) This backup set is the backup set just made, so will not be deleted.
+0018.085 (0) This backup set is the backup set just made, so will not be deleted.
+0018.086 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0018.096 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0018.117 (0) Resume backup (fe813557902a, 0): finish run
+0018.220 (0) Decremented the semaphore (fd) by 1
+0018.240 (0) Semaphore (fd) unlocked
+0018.250 (0) There were errors in the uploads, so the 'resume' event is remaining scheduled
+0018.273 (0) No email will/can be sent - the user has not configured an email address.
+0018.285 (0) The backup has not finished; a resumption is scheduled
+0320.644 (1) Opened log file at time: Wed, 19 Apr 2023 07:13:43 +0000 on http://localhost:8080/vardan
+0320.656 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.3 WP: 6.2 PHP: 8.1.2 (apache2handler, Windows NT DESKTOP-TIVGQNQ 10.0 build 19044 (Windows 10) AMD64) MySQL: 10.4.22-MariaDB (max packet size=1048576) WPLANG: en_US Server: Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.2 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 44.3M | 62M) multisite: N openssl: OpenSSL 1.1.1m  14 Dec 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0320.665 (1) Free space on disk containing Updraft's temporary directory: 168380.9 MB
+0320.675 (1) Requesting backup semaphore lock (fe813557902a)
+0320.698 (1) [Debug] Lock option (updraft_lock_fe813557902a, wp_options) was created in the database
+0320.705 (1) [Info] Lock (updraft_lock_fe813557902a, wp_options) acquired after initialising the database
+0320.725 (1) Backup run: resumption=1, nonce=fe813557902a, file_nonce=fe813557902a begun at=1681888102 (321s ago), job type=backup, previous check-in=17.69s
+0320.747 (1) Scheduling a resumption (2) after 300 seconds (1681888723) in case this run gets aborted
+0320.784 (1) Checking if we have a zip executable available
+0320.794 (1) Creation of backups of directories: already finished
+0320.802 (1) Saving backup status to database (elements: 8)
+0320.823 (1) Database dump (WordPress DB): Creation was completed already
+0320.831 (1) SQL compatibility mode is: NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0320.851 (1) PHP event: code E_DEPRECATED: strlen(): Passing null to parameter #1 ($string) of type string is deprecated (line 2866, C:\xampp\htdocs\vardan\wp-content\plugins\updraftplus\backup.php)
+0320.866 (1) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-plugins.zip: plugins: This file has already been successfully uploaded
+0320.872 (1) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-themes.zip: themes: This file has already been successfully uploaded
+0320.879 (1) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-uploads.zip: uploads: This file has already been successfully uploaded
+0320.888 (1) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-others.zip: others: This file has already been successfully uploaded
+0320.895 (1) backup_2023-04-19-0708_Vardaan_Shorthand_and_Typing_Moh_fe813557902a-db.gz: db: This file has already been successfully uploaded
+0320.901 (1) Saving backup history. Total backup size: 40.6 MB
+0320.917 (1) Resume backup (fe813557902a, 1): finish run
+0320.932 (1) There were no more files that needed uploading
+0320.938 (1) [Info] Lock option (updraft_lock_fe813557902a, wp_options) released
+0320.948 (1) There were no errors in the uploads, so the 'resume' event (2) is being unscheduled
+0320.971 (1) No email will be sent - this backup set was empty.
+0320.987 (1) The backup apparently succeeded and is now complete
